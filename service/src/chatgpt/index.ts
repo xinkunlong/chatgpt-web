@@ -40,7 +40,7 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
     const options: ChatGPTAPIOptions = {
       apiKey: process.env.OPENAI_API_KEY,
       completionParams: { model },
-      debug: true,
+      debug: false,
     }
 
     if (isNotEmptyString(process.env.OPENAI_API_BASE_URL))
@@ -81,7 +81,7 @@ async function chatReplyProcess(
       else
         options = { ...lastContext }
     }
-
+    global.console.log(`reqeust message: ${message}`)
     const response = await api.sendMessage(message, {
       ...options,
       onProgress: (partialResponse) => {
