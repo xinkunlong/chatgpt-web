@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://raw.githubusercontent.com/xinkunlong/chatgpt-web/blob/main/src/assets/avatar.jpg',
       name: 'Kuhn-Xin',
-      description: 'Star on <a href="https://github.com/xinkunlong/chatgpt-web" class="text-blue-500" target="_blank" >Github</a>',
+      description: '好好学习，天天向上',
     },
   }
 }
