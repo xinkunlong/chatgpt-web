@@ -47,9 +47,6 @@ onMounted(() => {
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
         <p>
           好好学习，天天向上
-            Github
-          </a>
-          ，免费且基于 MIT 协议，没有任何形式的付费行为！
         </p>
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
